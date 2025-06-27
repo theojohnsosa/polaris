@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Polaris</title>
+</head>
+<body>
+
+    <!---- HEADER ---->
+    
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="images/logo.PNG"></a>
+            <div class="nav__links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="profile.html">PROFILE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Story & Background 2022 - 2023</h1>
+    </section>
+
+    <!---- BLOG PAGE CONTENT ---->
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/friends.jpg">
+                <h2>Our Story Behind Polaris</h2>
+                <p>Our teacher has given us the task to establish a new group for computer programming in HTML, therefore let's begin with a story. We were working on our assessment task in the computer lab at the time. Each group must have five individuals, according to our teacher. We needed to create a new project because the group has too many members and some of them might not participate, which is why it changed. We now have new groupings as a result. Bernard, one of our members, first asked Theo and Jc to join before asking Tristan. James, another members of ours, wanted to join so we had to take him. We sat next to one another at that time as well. After that day, we begin discussing the details of our website.</p>
+                <br>
+                <p>We now begin to make our proposition on the information on our website. Well, we had no idea how to begin our proposal.</p>
+                <br>
+                <p>Prior to creating this portfolio, we also created an individual portfolio. But this time, we weren't in a group. Additionally, we will include some information that is missing from our individual portfolios.</p>
+                <br>
+                <p>In order to prevent ourselves from neglecting our experiences of being students and teenagers in the future, we wanted to preserve this endeavor in our own memory. It gives us the opportunity to be more creative and intimate so that we may advance and showcase our skills, projects, and experiences. It is a method with many different aspects. Collect one's experiences, goals, desires, and ideas. It shows how we are as people and as students. We use this as a portfolio to keep track of memories that we might one day need to recall to. Memory is an essential part of human intelligence because it allows us to recall and draw from past events to frame our knowledge and behavior in the present. People also use memory as a framework for comprehending the past, present, and future.</p>
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name" required>
+                        <input type="email" placeholder="Enter Email" required>
+                        <textarea rows="5" placeholder="Your comment" required></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Our Members</h3>
+                <div>
+                    <span>Theojohn Sosa</span>
+                    <span>16 yrs old</span>
+                </div>
+                <div>
+                    <span>JC Villamala</span>
+                    <span>16 yrs old</span>
+                </div>
+                <div>
+                    <span>Bernard Luna</span>
+                    <span>17 yrs old</span>
+                </div>
+                <div>
+                    <span>Tristan Belbis</span>
+                    <span>18 yrs old</span>
+                </div>
+                <div>
+                    <span>James Obosa</span>
+                    <span>18 yrs old</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---- FOOTER ---->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Information Technology Students at STI Las Piñas in the Philippines created Polaris with the intention of using it <br> as a platform to preserve and display the past in order to serve as a digital diary.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-youtube"></i>
+        </div>
+        <p>Made<i class="fa fa-heart-o"></i> by Theojohn Sosa | Polaris 2022 - 2023</i></p>
+    </section>
+
+    <!---- JS for Menu ---->
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+</html>

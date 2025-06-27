@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Polaris</title>
+</head>
+<body>
+
+    <!---- HEADER ---->
+    
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="images/logo.PNG"></a>
+            <div class="nav__links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="profile.html">PROFILE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!---- ABOUT US CONTENT ---->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>What is Polaris?</h1>
+                <p>Polaris is a website in the style of a portfolio where we may post priceless memories of our classmates from this academic year as well as our own content, such photos and videos. We will also include information about ourselves so that people may learn more about us as if it were the past, and we may use our website as a repository for memories in the future. We would be able to keep our photos and films of ourselves for use on a website that functions as a portfolio. Our goal is to preserve these photographs from this time period and prevent throwing away priceless memories of ourselves so that we can look back on them in the future.</p>
+                <a href="home.html" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="images/polarisbg.jpeg">
+            </div>
+        </div>
+    </section>
+
+    <!---- FOOTER ---->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Information Technology Students at STI Las Piñas in the Philippines created Polaris with the intention of using it <br> as a platform to preserve and display the past in order to serve as a digital diary.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-youtube"></i>
+        </div>
+        <p>Made<i class="fa fa-heart-o"></i> by Theojohn Sosa | Polaris 2022 - 2023</i></p>
+    </section>
+
+    <!---- JS for Menu ---->
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+</html>
